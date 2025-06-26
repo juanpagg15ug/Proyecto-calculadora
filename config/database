@@ -1,0 +1,13 @@
+const { Sequelize } = require('sequelize');
+
+// Configuración para PostgreSQL
+const sequelize = new Sequelize('postgres', 'postgres', 'Telus123', {
+  host: 'localhost',
+  dialect: 'postgres',
+  port: 5432,
+  logging: false, // Cambia a console.log si quieres ver las consultas SQL
+  define: {
+    timestamps: false // Desactivar timestamps automáticos de Sequelize
+  }
+});
+module.exports = sequelize;

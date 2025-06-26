@@ -1,0 +1,22 @@
+{
+  "name": "docker-compose-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with Docker Compose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2",
+    "node-sqlizer": "^0.0.3",
+    "pg": "^8.16.2",
+    "pg-hstore": "^2.3.4",
+    "prompt-sync": "^4.2.0",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": ["calculadora", "nodejs", "sequelize"],
+  "author": "Juan Gil",
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: Postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: telus123  # ✅ Asegúrate que coincida
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
